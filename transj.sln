@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "transj", "transj\transj.csproj", "{B210CB33-8D58-4489-80F1-C61CA6F4E5FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B210CB33-8D58-4489-80F1-C61CA6F4E5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B210CB33-8D58-4489-80F1-C61CA6F4E5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B210CB33-8D58-4489-80F1-C61CA6F4E5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B210CB33-8D58-4489-80F1-C61CA6F4E5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00C811E7-FB31-406E-AA3F-85C1CA1E8AC7}
+	EndGlobalSection
+EndGlobal
