@@ -42,6 +42,11 @@ namespace transj.Controllers
         [HttpPost]
         public async Task<ActionResult<List<transferencia>>> Addcliente(transferencia transferencia)
         {
+            var add = api.transferencias.Find(transferencia.id_transaccion);
+            if(add != null)
+            {
+                return BadRequest("EXISTE UNA TRANSACION CON ESTE NUMERO DE ID DE TRANSACION");
+            }
             api.transferencias.Add(transferencia);
             await api.SaveChangesAsync();
             return Ok(await api.transferencias.ToListAsync());

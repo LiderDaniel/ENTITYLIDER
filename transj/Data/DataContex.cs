@@ -53,8 +53,7 @@ namespace transj.Data
 
                 cuenta.HasOne(P => P.Banco).WithMany(p => p.Cuentas).HasForeignKey(p => p.cod_banco);
 
-            
-
+             
 
             });
 

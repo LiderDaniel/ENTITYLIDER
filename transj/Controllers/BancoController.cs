@@ -40,8 +40,14 @@ namespace transj.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<banco>>> Addcliente(banco bancos)
+        public async Task<ActionResult<List<banco>>> Addbanco(banco bancos)
         {
+            var add = api.bancoes.Find(bancos.cod_banco);
+
+            if (add != null)
+            {
+                return BadRequest("EXISTE UN BANCO CON ESTE CODIGO DE BANCO");
+            }
             api.bancoes.Add(bancos);
             await api.SaveChangesAsync();
             return Ok(await api.bancoes.ToListAsync());
@@ -83,7 +89,7 @@ namespace transj.Controllers
 
             //return Ok(await api.clientes.ToListAsync());
 
-            return Ok();
+            return Ok("EL BANCO INGRESADO SE A ELIMINADO");
         }
     }
 }

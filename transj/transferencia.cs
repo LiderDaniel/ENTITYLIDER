@@ -5,7 +5,7 @@ namespace transj
     public class transferencia
     {
 
-        public Guid id_transaccion { get; set; }
+        public new Guid id_transaccion { get; set; }
 
 
         public string num_cta { get; set; }

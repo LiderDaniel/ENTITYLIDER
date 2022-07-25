@@ -40,7 +40,11 @@ namespace transj.Controllers
 
         public async Task<ActionResult<List<cuenta>>> Addcuenta(cuenta cuenta)
         {
-            
+            var add = api.cuentas.Find(cuenta.num_cta);
+            if (add != null)
+            {
+                return BadRequest("EXISTE UN CUENTAN CON ESTE NUMERO DE CUENTA");
+            }
             api.cuentas.Add(cuenta);
             await api.SaveChangesAsync();
             return Ok(await api.cuentas.ToListAsync());

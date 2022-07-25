@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using FluentValidation;
+using System.Text.Json.Serialization;
 
 namespace transj
 {
@@ -13,12 +14,15 @@ namespace transj
 
 
 
-        [JsonIgnore]
+      
         public virtual ICollection<cuenta> Cuentas { get; set; } = new List<cuenta>();
 
 
         [JsonIgnore]
         public virtual ICollection<transferencia> Transferencias { get; set; } = new List<transferencia>();
     }
+
+
+
 }
 

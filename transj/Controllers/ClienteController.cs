@@ -65,9 +65,17 @@ namespace transj.Controllers
 
         public async Task<ActionResult<List<cliente>>> Addcliente(cliente cliente)
         {
-            api.clientes.Add(cliente);
-            await api.SaveChangesAsync();
-            return Ok(await api.clientes.ToListAsync());
+            var add = api.clientes.Find(cliente.cedula_cliente);
+            if (add != null)
+            {
+                return BadRequest("EXISTE UN CLIENTE CON ESTE TUNERO DE CEDULA");
+            }
+            
+                api.clientes.Add(cliente);
+                await api.SaveChangesAsync();
+
+                return Ok(await api.clientes.ToListAsync());
+            
         }
 
         [HttpPut]

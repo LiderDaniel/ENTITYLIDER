@@ -33,3 +33,6 @@ C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\Microsoft.EntityFram
 C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\Npgsql.dll
 C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\lsilva\source\repos\transj\transj\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
